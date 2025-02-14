@@ -1,0 +1,90 @@
+@import 'variables';
+@import 'resetform';
+
+@mixin flex-container ($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin avatar($size) {
+    width: #{$size}px;
+    height: #{$size}px;
+    border-radius: 50%;
+}
+
+%link-button {
+    padding: 1em;
+    width: 100%;
+    background-color: $link-button-background-color;
+    color: $white-color;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+%center-text {
+    text-align: center;
+}
+
+body {
+    font-family: $main-font;
+    @include flex-container();
+    background-color: $body-background-color;
+    @extend %center-text;
+    height: 100vh;
+}
+
+.container {
+    min-width: 327px;
+    background-color: $container-background-color;
+    @include flex-container(column);
+    padding: 1.5em;
+    border-radius: 10px;
+    gap: 1.5em;
+
+    .heading {
+        font-size: $large-font;
+        font-weight: $font-weight-semibold;
+        color: $white-color;
+        margin-bottom: 0.25em;
+    }
+    
+    .location {
+        font-size: $small-font;
+        color: $green-color;
+        font-weight: $font-weight-bold;
+    }
+    
+    .summary {
+        font-size: $small-font;
+        color: $white-color;
+        font-weight: $font-weight-light;
+    }
+    
+    .avatar {
+        @include avatar(88);
+    }
+    
+    .links-container {
+        @include flex-container(column);
+        gap: 1em;
+        align-self: stretch;
+    }
+    
+    .links {
+        @extend %link-button;
+        font-size: $small-font;
+        font-weight: $font-weight-bold;
+        &:hover, &:focus {
+            background-color: $green-color;
+            color: $link-button-background-color;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        min-width: 384px;
+    }
+}

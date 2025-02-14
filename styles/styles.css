@@ -1,0 +1,83 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container .links {
+  padding: 1em;
+  width: 100%;
+  background-color: #333333;
+  color: #FFFFFF;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+body {
+  text-align: center;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #141414;
+  height: 100vh;
+}
+
+.container {
+  min-width: 327px;
+  background-color: #1F1F1F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+  border-radius: 10px;
+  gap: 1.5em;
+}
+.container .heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 0.25em;
+}
+.container .location {
+  font-size: 0.875rem;
+  color: #C4F82A;
+  font-weight: 800;
+}
+.container .summary {
+  font-size: 0.875rem;
+  color: #FFFFFF;
+  font-weight: 300;
+}
+.container .avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+.container .links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  align-self: stretch;
+}
+.container .links {
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+.container .links:hover, .container .links:focus {
+  background-color: #C4F82A;
+  color: #333333;
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 384px;
+  }
+}/*# sourceMappingURL=styles.css.map */
