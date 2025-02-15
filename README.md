@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/thenotoriousob/social-links-profile]
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://thriving-maamoul-74cb0a.netlify.app/]
 
 ## My process
 
@@ -43,11 +43,11 @@ Users should be able to:
 ### What I learned
 
 How to compile SAAS files
-SAAS variables
-SAAS use
-SAAS mixins/includes
-SAAS extend
-SAAS nesting
+SAAS variables - makes it easy to maintain and update styles across a project
+SAAS import - makes it possible to import modular pieces
+SAAS mixins/includes - makes it easier and more efficient to write CSS by allowing you to nest your selectors inside one another
+SAAS extend - when it is necessary for a class to have the styles of another class, along with its own specific styles
+SAAS nesting - makes it easier and more efficient to write CSS by allowing you to nest your selectors inside one another
 
 ### Useful resources
 
